@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" />
+	</head>
+	<body>
+		<header class="head">
+			<h1>
+				<a href="index.html"></a>
+			</h1>
+			<div class="search">
+				<span class="fa fa-search find"></span>
+				<span class="fa fa-remove del"></span>
+				<input class="seek" type="text" value="输入文件名" />
+			</div>
+			<div class="line">
+				<a class="fa fa-reorder" href="#" title="列表视图"></a>
+				<a class="fa fa-th-large active" href="#" title="缩略图视图"></a>
+			</div>
+			<div class="sort">
+				<a class="fa fa-clock-o active" href="#" title="按时间排序"></a>
+				<a class="fa fa-sort-alpha-asc " href="#" title="缩略图视图"></a>
+			</div>
+			<div class="add">
+				<div class="upload">
+					<span>＋</span>
+					<span>添加</span>
+				</div>
+				<ul class="up_list">
+					<li class="up_folder">
+						<div class="bg"></div>
+						<h3>上传文件</h3>
+					</li>
+					<li class="outline_download">
+						<div class="bg"></div>
+						<h3>离线下载</h3>
+					</li>
+					<li class="create_folder">
+						<div class="bg"></div>
+						<h3>创建文件夹</h3>
+					</li>
+					<li class="add_note">
+						<div class="bg"></div>
+						<h3>添加笔记</h3>
+					</li>
+					<div class="add_ico"></div>
+				</ul>
+			</div>
+		</header>
+		<div class="content">
+			<div class="nav">
+				<div class="information">
+					<a href=""></a>
+				</div>
+				<div class="folder_classify">
+					<dl class="file">
+						<dt>文件</dt>
+						<dd class="all select" type = 'all'>
+							<span class="fa fa-file-text"></span>
+							<span>全部</span>
+						</dd>
+						<dd class="document" type = 'txt'>
+							<span class="fa fa-file-o"></span>
+							<span>文档</span>
+						</dd>
+						<dd class="picture" type = 'jpg'>
+							<span class="fa fa-file-photo-o"></span>
+							<span>图片</span>
+						</dd>
+						<dd class="video" type = 'video'>
+							<span class="fa fa-video-camera"></span>
+							<span>视频</span>
+						</dd>
+						<dd class="note" type = 'note'>
+							<span class="fa fa-book"></span>
+							<span>笔记</span>
+						</dd>
+						<dd class="music" type = 'mp3'>
+							<span class="fa fa-music"></span>
+							<span>音乐</span>
+						</dd>
+					</dl>
+					<dl class="pic_time">
+						<dt>照片</dt>
+						<dd class="time_wall">
+							<span class="fa fa-calendar-minus-o"></span>
+							<span>时间</span>
+						</dd>
+					</dl>
+					<dl class="mine">
+						<dt>我的</dt>
+						<dd class="clipboard" type = 'board'>
+							<span class="fa fa-clipboard"></span>
+							<span>剪贴板</span>
+						</dd>
+						<dd class="trash" type = 'trash'>
+							<span class="fa fa-trash"></span>
+							<span>回收站</span>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="folder_show">
+				<div class="file_nav">
+					<div class="allSelect"></div>
+					<span>|</span>
+					<ul class="folder_nav">
+						<li><a href="">微云</a></li>
+					</ul>
+				</div>
+				<ul class="data"></ul>
+			</div>
+		</div>
+		
+		
+		<div id="tool">
+			<h1>
+				<a href="index.html"></a>
+			</h1>
+			<span class="cancel">取消选择</span>
+			<span class="snum">选择了1项</span>
+			<div class="download">
+				<span class="fa fa-download"></span>
+				<span>下载</span>
+			</div>
+			<div class="remove">
+				<span></span>
+				<span>移动到</span>
+			</div>
+			<div class="changename">
+				<span class="fa fa-pencil-square-o"></span>
+				<span>重命名</span>
+			</div>
+			<div class="folder_del">
+				<span class="fa fa-trash"></span>
+				<span>删除</span>
+			</div>
+		</div>
+		<div id="mask">
+			<div id="move">
+				<div>选择存储位置</div>
+				<div class="content">
+					<div class="selected">
+						<span class="folder_ico"></span>
+						<span class="folder_name">我的文档</span>
+						<span class="over"></span>
+					</div>
+					<div class="folders">
+						<div class="nav_head">
+							<div>移动到：</div>
+							<ul class="open_folders"></ul>
+						</div>
+						<ul class="folders_list"></ul>
+					</div>
+					<div class="do">
+						<div class="info"></div>
+						<div class="make">确定</div>
+						<div class="none">取消</div>
+					</div>
+				</div>
+				<div class="hidden">✘</div>
+			</div>
+			<div id="del">
+				<div class="name">删除文件</div>
+				<div class="del_info">
+					<div class="tips">
+						<span class="fa fa-warning"></span>
+						<span>确定要删除这些文件吗 ?</span>
+					</div>
+					<div class="tips_info">以删除的文件可以在回收站找到</div>
+					<div class="do">
+						<div class="make">确定</div>
+						<div class="none">取消</div>
+					</div>
+				</div>
+				<div class="hidden">✘</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/tool.01.js" ></script>
+		
+	</body>
+</html>
